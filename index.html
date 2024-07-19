@@ -5,57 +5,124 @@
     <title>Learn Trading With - TradeWise</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="">
-    <header class="flex bg-secondary justify-between items-center p-4 md:p-8">
-      <img src="images/logo.png" alt="" class="w-10 bg-white" />
-      <nav class="flex-col md:flex w-[60%] space-y-4">
-        <img src="images/menu.png" alt="menu" class="menu w-8 md:hidden" />
+  <!-- <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .community:hover .submenu {
+      display: flex;
+      opacity: 100;
+      margin-top: 50px;
+      width: 50%;
+      background: #000;
+      gap: 5rem;
+      right: 2px;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  </style> -->
+  <body class="bg-inherit">
+    <header
+      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8"
+    >
+      <div class="flex justify-between bg-white md:bg-none">
+        <p class="font-bold text-4xl text-primary">
+          Bit<span class="text-secondary">Pip</span>
+        </p>
+        <img
+          src="images/menu.png"
+          alt="menu"
+          id="opennav"
+          class="menu w-8 md:hidden"
+        />
+        <img src="images/close.png" class="hidden w-8" id="closenav" alt="" />
+      </div>
+      <nav
+        class="hidden bg-white text-left md:shadow-none md:flex space-y-4 md:w-[500px]"
+        id="navbar"
+      >
         <ul
-          class="hidden font-bold text-right md:flex md:justify-between md:text-white md:w-[70%]"
+          class="navlist p-4 font-bold text-center gap-6 flex flex-wrap md:justify-between"
         >
           <li class="md:hover:text-button">
             <a href="forex.html">Analysis</a>
           </li>
           <li class="md:hover:text-button"><a href="forex.html">News</a></li>
-          <li class="md:hover:text-button">
-            <a href="forex.html">Learn Forex</a>
+          <li class="md:hover:text-button md:hover:">
+            <a href="/forex/forex.html">Learn Forex</a>
           </li>
           <li class="md:hover:text-button">
-            <a href="forex.html">Learn Crypto</a>
+            <a href="/crypto/crypto.html">Learn Crypto</a>
           </li>
-          <li class="md:hover:text-button">
+          <li class="community md:hover:text-button items-center">
             <a href="forex.html">Community</a>
+            <ul
+              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500 "
+            >
+              <li>
+                <a href="https://facebook.com/bitpips">Facebook</a>
+              </li>
+              <li>
+                <a href="https://x.com/bitpips">Twitter</a>
+              </li>
+              <li>
+                <a href="t.me/bitpips">Telegram</a>
+              </li>
+              <li>
+                <a href="reddit/bitpips">Reddit</a>
+              </li>
+              <li>
+                <a href="wa.me/bitpips">WhatsApp</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
-      <button class="hidden">Sign Up</button>
-      <button class="hidden">Sign In</button>
+      <div class="md:flex gap-4 items-center hidden">
+        <a href="/signup.html"
+          ><button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign Up
+          </button></a
+        >
+        <a href="signin.html">
+        <button
+          class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+        >
+          Sign In
+        </button></a>
+      </div>
     </header>
 
     <section
-      class="courses flex-col text-center p-4 items-center space-y-4 md:grid md:grid-cols-2 md:text-left md:text-2xl"
+      class="courses flex-col text-center p-4 items-center space-y-4 pt-28 md:grid md:grid-cols-2 md:text-left md:text-2xl"
     >
       <img
         src="images/teaching.png"
         alt="Learn Forex"
-        class="mx-auto w-[70%]"
+        class="mx-auto w-[80%]"
       />
-      <div class="mx-auto">
-        <p class="font-bold text-2xl text-center">New To Forex?</p>
+      <div class="mx-auto md:w-[400px]">
+        <p class="font-bold text-2xl md:text-4xl">New To Forex?</p>
         <p class="forex">
           Learn how to trade forex with our Earning Structure. It is the
           complete beginner's guide to forex trading.
         </p>
-        <button
-          id="cta"
-          class="bg-button px-10 py-2 font-semibold text-background rounded-full mt-2"
+        <a href="forex/forex.html">
+          <button
+            id="cta"
+            class="bg-button px-10 py-2 font-semibold text-background rounded-full mt-2"
+          >
+            Learn Forex
+          </button></a
         >
-          Learn Forex
-        </button>
       </div>
     </section>
     <section
-      class="courses bg-[#686aa7] text-center text-white flex-col py-8 space-y-4 md:grid md:grid-cols-2 items-center"
+      class="courses bg-gradient-to-tr from-secondary to-button flex-col text-center text-white p-4 items-center space-y-4 pt-28 md:grid md:grid-cols-2 md:text-left md:text-2xl"
     >
       <!-- <img src="images/blob.png" alt="" class="absolute -left-1 bottom-11 w-60 -z-[1] -rotate-45 overflow-x-hidden"> -->
       <img
@@ -63,24 +130,26 @@
         alt="Learn Forex"
         class="mx-auto w-[70%]"
       />
-      <div class="mx-auto">
-        <p class="font-bold text-2xl text-center">Want To Trade Crypto?</p>
+      <div class="mx-auto p-4">
+        <p class="font-bold text-2xl md:text-4xl">Want To Trade Crypto?</p>
         <p class="forex">
           If you're new to cryptocurrencies, our online crypto course is the
           perfect starting point to explore and understand the crypto market.
         </p>
-        <button
-          id="cta"
-          class="bg-button px-10 py-2 font-semibold mt-2 rounded-full"
+        <a href="/crypto/crypto.html">
+          <button
+            id="cta"
+            class="bg-button px-10 py-2 font-semibold mt-2 rounded-full"
+          >
+            Learn Crypto
+          </button></a
         >
-          Learn Crypto
-        </button>
       </div>
     </section>
 
     <section class="featured mt-8 flex-col space-y-8 px-6">
       <p
-        class="mx-auto relative text-center border-[3px] border-primary shadow-xl font-bold text-text p-2 w-[60%]"
+        class="mx-auto relative text-center border-[3px] border-primary shadow-xl font-bold text-text p-2 w-[60%] -z-10"
       >
         Featured Lessons
       </p>
@@ -125,7 +194,8 @@
           <p class="font-bold text-xl">When And When Not To Trade</p>
           <p>
             Find this confusing right? Well there are times trade and when not
-            to in order to make profit and not loss. Dive in and lets study together.
+            to in order to make profit and not loss. Dive in and lets study
+            together.
           </p>
         </div>
       </div>
@@ -134,10 +204,15 @@
         <div class="flex-col space-y-4">
           <p class="font-bold text-xl">Who Are Forex Brokers</p>
           <p>
-            Forex brokers are companies or individuals that act as intermediaries between traders and the foreign exchange market. They provide platforms and services that enable traders to buy and sell currencies. Here’s a simpler explanation of what forex brokers do and some key points about them
+            Forex brokers are companies or individuals that act as
+            intermediaries between traders and the foreign exchange market. They
+            provide platforms and services that enable traders to buy and sell
+            currencies. Here’s a simpler explanation of what forex brokers do
+            and some key points about them
           </p>
         </div>
       </div>
     </section>
   </body>
+  <script src="index.js"></script>
 </html>
