@@ -25,14 +25,15 @@
 <body>
     <img src="images/vectorbg.jpg" class="bgimg">
     <div class="flex h-screen items-center w-full">
-        <form action="post" class="flex-col space-y-4 mx-auto w-[80%]">
+        <form action="post" class="flex-col space-y-4 mx-auto w-[80%] md:w-[400px]">
             <p class="font-comforta text-3xl font-bold ">SignUp</p>
             <p>Track progress with an account</p>
-            <input type="text" name="fullname" id="name" placeholder="FullName" required spellcheck="true" class="w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="email" name="mail" id="email" placeholder="Email" required class="w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="password" name="password" id="pass" placeholder="Password" maxlength="12" required class="w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="number" name="mobilenumber" id="mobile" placeholder="Mobile" required class="w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
+            <input type="text" name="fullname" id="name" placeholder="FullName" title="Please enter your fullname" required spellcheck="true" class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
+            <input type="email" name="mail" id="email" placeholder="Email" title="Please enter your email" required class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
+            <input type="password" name="password" id="pass" placeholder="Password" title="Please enter a strong password" maxlength="12" required class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
+            <input type="tel" name="mobilenumber" id="mobile" placeholder="Mobile" title="Please enter your phone number" required class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
             <button type="submit" class="bg-button w-full py-4 rounded text-white font-bold text-xl">Create Account</button>
+            <p class="font-comforta text-center">Already have an? <a href="signin.html" class="text-button font-semibold">Login Here</a></p>
         </form>
     </div>
 </body>
