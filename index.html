@@ -4,13 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Trading With - TradeWise</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    />
   </head>
   <style>
     ::-webkit-scrollbar {
       display: none;
     }
   </style>
-  <body>
+  <body class="font-quicksand">
     <header
       class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8"
     >
@@ -46,7 +55,7 @@
           <li class="community md:hover:text-button items-center">
             <a href="forex.html">Community</a>
             <ul
-              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500 "
+              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500"
             >
               <li>
                 <a href="https://facebook.com/bitpips">Facebook</a>
@@ -76,11 +85,12 @@
           </button></a
         >
         <a href="signin.html">
-        <button
-          class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          <button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign In
+          </button></a
         >
-          Sign In
-        </button></a>
       </div>
     </header>
 
@@ -94,7 +104,7 @@
       />
       <div class="mx-auto md:w-[400px]">
         <p class="font-bold text-2xl md:text-4xl">New To Forex?</p>
-        <p class="forex">
+        <p class="forex max-w-[400px] mx-auto">
           Learn how to trade forex with our Earning Structure. It is the
           complete beginner's guide to forex trading.
         </p>
@@ -119,7 +129,7 @@
       />
       <div class="mx-auto p-4">
         <p class="font-bold text-2xl md:text-4xl">Want To Trade Crypto?</p>
-        <p class="forex">
+        <p class="forex max-w-[400px] mx-auto">
           If you're new to cryptocurrencies, our online crypto course is the
           perfect starting point to explore and understand the crypto market.
         </p>
@@ -134,17 +144,18 @@
       </div>
     </section>
 
-    <section class="featured mt-8 flex-col space-y-8 px-6">
+    <section class="featured mt-8 flex-col space-y-8 px-6 font-comforta mb-12">
       <p
         class="mx-auto relative text-center border-[3px] border-primary shadow-xl font-bold text-text p-2 w-[60%] -z-10"
       >
         Featured Lessons
       </p>
-
-      <div class="cryptocurrencies">
-        <img src="" alt="" />
-        <div class="flex-col space-y-4">
-          <p class="font-bold text-xl">What Are CryptoCurrencies</p>
+      <div class="lessons flex-col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="cryptocurrencies w-[80%] flex-col space-y-3 mx-auto md:mx-0">
+          <div class="flex-col space-y-4">
+            <img src="images/coins.jpg" alt="Crypto Currencies" />
+            <p class="font-bold text-xl">What Are CryptoCurrencies?</p>
+          </div>
           <p>
             Cryptocurrencies are digital or virtual currencies that use
             cryptography for security. Unlike traditional currencies issued by
@@ -152,50 +163,49 @@
             operate on decentralized systems using blockchain technology.
           </p>
         </div>
-      </div>
-      <div class="cryptocurrencies">
-        <img src="" alt="" />
-        <div class="flex-col space-y-4">
-          <p class="font-bold text-xl">Understanding Chart Patterns</p>
+        <div class="chart pattern flex-col w-[80%] space-y-3 mx-auto md:mx-0">
+          <div class="flex-col space-y-4">
+            <img src="images/chart_patterns.jpg" alt="Chart Patterns" />
+            <p class="font-bold text-xl">Understanding Chart Patterns</p>
+          </div>
           <p>
             Chart patterns are shapes that form on a price chart of an asset,
             like a stock or cryptocurrency. These patterns can help traders
             predict future price movements based on past behavior..
           </p>
         </div>
-      </div>
-      <div class="forex-market">
-        <img src="" alt="" />
-        <div class="flex-col space-y-4">
-          <p class="font-bold text-xl">What Is Forex</p>
+        <div class="forex-market flex-col w-[80%] space-y-3 mx-auto md:mx-0">
+          <div class="flex-col space-y-4">
+            <img src="images/forex1.jpg"/>
+            <p class="font-bold text-xl">What Is Forex</p>
+          </div>
           <p>
             Forex, or foreign exchange, is the global market for trading
-            currencies. It's the largest and most liquid financial market in the
-            world, where trillions of dollars are exchanged daily.
+            currencies. It's the largest and most liquid financial market in
+            the world, where trillions of dollars are exchanged daily.
           </p>
         </div>
-      </div>
-      <div class="cryptocurrencies">
-        <img src="" alt="" />
-        <div class="flex-col space-y-4">
-          <p class="font-bold text-xl">When And When Not To Trade</p>
+        <div class="cryptocurrencies  flex-col w-[80%] space-y-3 mx-auto md:mx-0">
+          <div class="flex-col space-y-4">
+            <img src="images/enter-and-exit.jpg" alt="when not to trade" />
+            <p class="font-bold text-xl">When And When Not To Trade</p>
+          </div>
           <p>
             Find this confusing right? Well there are times trade and when not
             to in order to make profit and not loss. Dive in and lets study
             together.
           </p>
         </div>
-      </div>
-      <div class="cryptocurrencies">
-        <img src="" alt="" />
-        <div class="flex-col space-y-4">
-          <p class="font-bold text-xl">Who Are Forex Brokers</p>
+        <div class="cryptocurrencies flex-col w-[80%] space-y-3  mx-auto md:mx-0">
+          <div class="flex-col space-y-4">
+            <img src="images/broker.jpg" alt="" />
+            <p class="font-bold text-xl">Who Are Forex Brokers</p>
+          </div>
           <p>
             Forex brokers are companies or individuals that act as
-            intermediaries between traders and the foreign exchange market. They
-            provide platforms and services that enable traders to buy and sell
-            currencies. Here’s a simpler explanation of what forex brokers do
-            and some key points about them
+            intermediaries between traders and the foreign exchange market.
+            They provide platforms and services that enable traders to buy and
+            sell currencies.
           </p>
         </div>
       </div>

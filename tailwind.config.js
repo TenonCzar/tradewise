@@ -18,8 +18,6 @@ module.exports = {
       backgroundImage: {
         curly_bckgnd: "url(/images/vectorbg.jpg)"
       },
-      backgroundOpacity: {
-      }
     },
   },
   plugins: [],
