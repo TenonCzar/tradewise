@@ -1,18 +1,22 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/output.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitPip-Learn Crypto Trading</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    />
+  </head>
+  <body class="">
     <header
-      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8"
+      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 w-full md:p-8"
     >
       <div class="flex justify-between bg-white md:bg-none">
-        <p class="font-bold text-4xl text-primary">
+        <a href="/" class="font-bold text-4xl text-primary">
           Bit<span class="text-secondary">Pip</span>
-        </p>
+        </a>
         <img
           src="/images/menu.png"
           alt="menu"
@@ -32,16 +36,16 @@
             <a href="forex.html">Analysis</a>
           </li>
           <li class="md:hover:text-button"><a href="forex.html">News</a></li>
-          <li class="md:hover:text-button">
-            <a href="/forex/forex.html">Learn Forex</a>
+          <li class="md:hover:text-button md:hover:">
+            <a href="/forex/courses.html">Learn Forex</a>
           </li>
           <li class="md:hover:text-button">
-            <a href="/crypto/crypto.html">Learn Crypto</a>
+            <a href="/crypto/courses.html">Learn Crypto</a>
           </li>
-          <li class="md:hover:text-button items-center">
+          <li class="community md:hover:text-button items-center">
             <a href="forex.html">Community</a>
             <ul
-              class="submenu flex-col space-y-1 absolute drop-shadow-lg text-left text-secondary text-[10px] p-2 -mt-6 opacity-0 transition-all ease-in-out hover:opacity-100 hover:bg-background hover:pt-5 hover:-z-10"
+              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500"
             >
               <li>
                 <a href="https://facebook.com/bitpips">Facebook</a>
@@ -70,14 +74,241 @@
             Sign Up
           </button></a
         >
-        <button
-          class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+        <a href="signin.html">
+          <button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign In
+          </button></a
         >
-          Sign In
-        </button>
       </div>
     </header>
 
-    <p class="text-red-500">Hope</p>
-</body>
+    <section class="capt bg-secondary p-4 font-comforta text-white border-b-2">
+      <div
+        class="flex-col space-y-2 items-center text-center md:grid md:grid-cols-2 md:text-left md:pr-20 md:pl-20 justify-center"
+      >
+        <img
+          src="/images/chart-1905225_1280.jpg"
+          class="md:w-[70%] border-2 border-white rounded-xl"
+          alt=""
+        />
+        <div class=" flex-col space-y-4">
+          <p class="font-bold text-2xl md:text-4xl">School Of Pips</p>
+          <p>
+            Our forex education is engaging and easy to grasp, designed to make
+            learning fun. Boost your knowledge with our comprehensive materials
+            and track your progress with our interactive tools every step of the
+            way.
+          </p>
+          <button
+            class="bg-button py-2 px-4 rounded-full hover:shadow-xl hover:bg-blue-700"
+          >
+            <a href="#">Start Your Journey</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="flex p-4 md:p-8 gap-12 justify-center">
+      <a
+        href="/forex/courses.html"
+        class="bg-secondary p-2 px-6 tex text-white font-bold rounded font-mono"
+      >
+        Courses
+      </a>
+      <a
+        href="/forex/lesson.html"
+        class="bg-gray-400 p-2 px-6 tex text-white font-bold rounded font-mono"
+      >
+        lessons
+      </a>
+    </section>
+
+    <section class="courses flex-col space-y-6 p-4 md:pl-20 font-comforta">
+      <!-- <div class="intro flex-col space-y-2 md:p-10 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">1</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Introduction To Crypto
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Discover what cryptocurrency is and what makes it unique. Meet your friendly guide, who will walk you through their approach to teaching crypto in an easy-to-understand way.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">2</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            History Behind BitCoin
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Understanding Bitcoin—its origins, its workings, and its purpose—provides a solid foundation for navigating the entire crypto space effectively.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>5 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">3</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            The Bitcoin Network
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Learn about the Bitcoin network, what activities occur on it, and why it holds significant importance in the world of digital currencies.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">4</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            What Is Hashing
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">To truly grasp how Bitcoin and other cryptocurrencies function, it's essential to first comprehend the concept of "hashing".</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">5</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Bitcoin Mining
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Learn what Bitcoin mining is and how it works. The inner workings of mining Bitcoin are demystified. It’s simpler than you might imagine.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">6</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            BlockChain Guide
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Learn what a blockchain is and how it relates to Bitcoin and other cryptocurrencies.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>2 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">7</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Trading Wallets
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">To send or receive bitcoins, you need a Bitcoin "wallet." Discover what a wallet is, the different types available, and how to use them.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>8 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">8</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Introduction to Digital Signatures
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Digital signatures are a fundamental building block in cryptocurrencies. Discover what they are and how they work.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>7 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-4 py-2 rounded-full text-white font-bold">9</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            What Are AltCoins
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">Cryptocurrencies other than Bitcoin are known as altcoins. Learn more about them and understand the differences between altcoins and Bitcoin.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base md:pl-14">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-3 py-2 rounded-full text-white font-bold">10</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Basic Crypto Exchange
+          </p>
+        </div>
+        <p class="text-xs md:text-base md:w-full md:pl-14">How do you buy bitcoin? Learn where to buy, sell, and trade cryptocurrencies.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base">
+        <button class="bg <p class="te-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>12 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-3 py-2 rounded-full text-white font-bold">11</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Crypto Scams And How To Avoid Them
+          </p>
+        </div>
+        <p class="text-xs md:text-base">A beginner’s guide to recognizing common crypto scams and staying safe while trading cryptocurrency.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>4 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-3 py-2 rounded-full text-white font-bold">12</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Walkthrough Ethereum
+          </p>
+        </div>
+        <p class="text-xs md:text-base">Discover what Ethereum is, how it works, and what sets it apart from Bitcoin.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>7 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-3 py-2 rounded-full text-white font-bold">13</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Crypto Trading Guide
+          </p>
+        </div>
+        <p class="text-xs md:text-base">New to crypto trading? Learn the key trading principles and how to develop a successful trading strategy.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>8 Lessons</p>
+      </div>
+      </div>
+      <div class="intro flex-col space-y-2 md:w-[700px] bg-gray-200 p-4 rounded-md">
+        <div class="flex-col space-y-2 md:flex md:flex-row gap-4">
+          <p class="bg-secondary w-fit px-3 py-2 rounded-full text-white font-bold">14</p>
+          <p class="text-xl md:text-2xl font-bold text-gray-700">
+            Non-Fungible Tokens (NFT)
+          </p>
+        </div>
+        <p class="text-xs md:text-base">Non-fungible tokens (NFTs) are a hot topic in the crypto world. In this beginner’s guide, discover what NFTs are, how they work, their various uses, and how to buy and sell them.</p>
+        <div class="flex items-center text-xs gap-2 font-bold md:text-base">
+        <button class="bg-button py-2 px-4 text-white rounded-full text-xs md:text-base"><a href="#">Begin Study</a></button>
+        <p>9 Lessons</p>
+      </div>
+      </div> -->
+      <p>STILL UNDER DEVELOPMENT....</p>
+    </section>
+  </body>
+  <script src="/index.js"></script>
 </html>
