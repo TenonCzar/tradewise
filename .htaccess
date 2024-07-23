@@ -1,4 +1,15 @@
+# mod_rewrite starts here
+
 RewriteEngine on
-Rewrite.Cond %{REQUEST_FILENAME} !-d
-Rewrite.Cond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1 .html [NC,L]
+
+# does not apply to existing directories, meaning if folder exist on the server then dont change anything and dont run the rule
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in directory for html condition
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we show the page that has the .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
