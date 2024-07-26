@@ -16,79 +16,73 @@
     />
   </head>
   <body class="font-quicksand">
-    <header
-      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8 z-10"
-    >
-      <div class="flex justify-between bg-white md:bg-none">
-        <a href="/" class="font-bold text-4xl text-primary">
-          Bit<span class="text-secondary">Pip</span>
-        </a>
-        <img
-          src="/images/menu.png"
-          alt="menu"
-          id="opennav"
-          class="menu w-8 md:hidden"
-        />
-        <img src="/images/close.png" class="hidden w-8" id="closenav" alt="" />
+    <div class="modes bg-red-500 flex fixed w-[40%] bottom-[30px] pl-4">
+        <img src="/images/light-mood.png" class="hidden bg-transparent  w-12 " alt="lightmode" id="lightmode">
+        <img src="/images/dark-mood.png" class="bg-transparent w-12" alt="darkmode" id="darkmode">
       </div>
-      <nav
-        class="hidden bg-white text-left md:shadow-none md:flex space-y-4 md:w-[60%]"
-        id="navbar"
-      >
-        <ul
-          class="navlist p-4 font-bold text-center gap-6 flex flex-wrap md:justify-between mx-auto w-full"
-        >
-          <li class="md:hover:text-button">
-            <a href="#">Analysis</a>
-          </li>
-          <li class="md:hover:text-button"><a href="#">News</a></li>
-          <li class="md:hover:text-button md:hover:">
-            <a href="/forex/courses.html">Learn Forex</a>
-          </li>
-          <li class="md:hover:text-button">
-            <a href="/crypto/courses.html">Learn Crypto</a>
-          </li>
-          <li class="community md:hover:text-button items-center">
-            <a href="forex.html">Community</a>
-            <ul
-              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500"
-            >
-              <li>
-                <a href="https://facebook.com/bitpips">Facebook</a>
-              </li>
-              <li>
-                <a href="https://x.com/bitpips">Twitter</a>
-              </li>
-              <li>
-                <a href="t.me/bitpips">Telegram</a>
-              </li>
-              <li>
-                <a href="reddit/bitpips">Reddit</a>
-              </li>
-              <li>
-                <a href="wa.me/bitpips">WhatsApp</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div class="md:flex gap-4 items-center hidden">
-        <a href="/signup.html"
-          ><button
-            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
-          >
-            Sign Up
-          </button></a
-        >
-        <a href="/signin.html">
-          <button
-            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
-          >
-            Sign In
-          </button></a
-        >
-      </div>
-    </header>
+      <header id="header"
+        class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8">
+        <div class="flex justify-between md:bg-none">
+          <a href="/" class="font-bold text-4xl text-primary">
+            Bit<span class="text-secondary">Pip</span>
+          </a>
+          <img src="images/menu.png" alt="menu" id="opennav" class="menu w-8 md:hidden" />
+          <img src="images/close.png" class="hidden w-8" id="closenav" alt="" />
+        </div>
+        <nav class="hidden bg-white text-left md:shadow-none md:flex space-y-4 md:w-[60%]" id="navbar">
+          <ul class="navlist p-4 font-bold text-center gap-6 flex flex-wrap md:justify-between mx-auto">
+            <li class="md:hover:text-button">
+              <a href="forex.html">Analysis</a>
+            </li>
+            <li class="md:hover:text-button"><a href="forex.html">News</a></li>
+            <li class="md:hover:text-button md:hover:">
+              <a href="/forex/forex.html">Learn Forex</a>
+            </li>
+            <li class="md:hover:text-button">
+              <a href="/crypto/courses.html">Learn Crypto</a>
+            </li>
+            <li class="community md:hover:text-button items-center">
+              <a href="forex.html">Community</a>
+              <ul
+                class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out bg-red-500">
+                <li>
+                  <a href="https://facebook.com/bitpips">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://x.com/bitpips">Twitter</a>
+                </li>
+                <li>
+                  <a href="t.me/bitpips">Telegram</a>
+                </li>
+                <li>
+                  <a href="reddit/bitpips">Reddit</a>
+                </li>
+                <li>
+                  <a href="wa.me/bitpips">WhatsApp</a>
+                </li>
+              </ul>
+            </li>
+            <div class="mobcta flex gap-4 md:hidden">
+              <a href="/signup.html"><button class="text-secondary hover:bg-primary">
+                  Sign Up
+                </button></a>
+              <a href="signin.html">
+                <button class="text-secondary hover:bg-primary">
+                  Sign In
+                </button>
+            </div>
+          </ul>
+        </nav>
+        <div class="md:flex gap-4 items-center hidden">
+          <a href="/signup.html"><button class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary">
+              Sign Up
+            </button></a>
+          <a href="signin.html">
+            <button class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary">
+              Sign In
+            </button></a>
+        </div>
+      </header>
     <section class="pt-20 md:pt-36 px-6">
       <div class="title flex-col space-y-4 border-b-2 pb-4">
         <p class="text-xl font-bold">Bitology Education</p>
