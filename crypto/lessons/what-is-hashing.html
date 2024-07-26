@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
     />
   </head>
-  <body class="font-quicksand">
+  <body class="font-quicksand bg-red-500 text-white" id="body">
     <header
       class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8 z-10"
     >
@@ -93,88 +93,79 @@
       <div class="title flex-col space-y-4 pb-4 items-center border-b-2">
         <p class="text-base font-bold text-secondary">Bitology Education</p>
         <a
-          href="/crypto/lessons/introduction-to-crypto.html"
+          href="/crypto/lessons/what-is-hashing.html"
           class="font-bold text-secondary"
-          >Introduction To Crypto</a
+          >Hashing</a
         >
-        <p class="font-bold text-2xl md:text-3xl">What Are Cryptocurrencies?</p>
+        <p class="font-bold text-2xl md:text-3xl">What Is Hashing</p>
       </div>
     </section>
     <section
       class="note flex-col space-y-4 text-xl md:text-2xl p-4 md:px-8 md:w-[90%]"
     >
       <p>
-        In the world we see ourselves today, cryptocurrency has now become so
-        popular that it is now used for both online and offline transactions
+        Hashing is a crucial concept in the world of computer science and
+        cryptography.
       </p>
       <p>
-        Cryptocurrency is a type of digital or virtual currency that uses
-        cryptography for security. Unlike traditional currencies issued by
-        governments (like the US dollar or euro), cryptocurrencies operate on a
-        technology called blockchain, which is a decentralized network spread
-        across many computers.
+        To understand hashing, think of it as a way to transform any piece of
+        data, whether it's a tiny message or a huge file, into a unique string
+        of characters.
       </p>
       <p>
-        Hey, what really makes this special? Well let's see why it is important.
-      </p>
-      <p class="font-bold text-xl md:text-2xl">BorderLess Transaction</p>
-      <p>
-        Cryptocurrencies facilitate easy and quick cross-border transactions
-        without the need for currency exchange or high fees.
-      </p>
-      <p class="font-bold text-xl md:text-2xl">Anonymity</p>
-      <!-- <img src="/images/anonymous-.png" alt="" class="w-48"> -->
-      <p>
-        Cryptocurrencies can offer a level of privacy not typically available
-        with traditional financial transactions. Users can make transactions
-        without revealing their identities.
-      </p>
-      <p class="font-bold text-xl md:text-2xl">Financial Freedom</p>
-      <p>
-        Cryptocurrencies offer a way to manage money without relying on
-        traditional banks or financial institutions. This appeals to those who
-        prefer greater control over their finances.
-      </p>
-      <p class="font-bold text-xl md:text-2xl">Payments and Remittances</p>
-      <p>
-        More businesses are accepting cryptocurrencies as payment, and they are
-        increasingly used for remittances due to lower fees and faster transfer
-        times.
-      </p>
-      <p class="font-bold text-xl md:text-2xl">Decentralized</p>
-      <p>
-        Unlike traditional currencies, which are issued by governments and
-        central banks, cryptocurrencies operate independently. They are not tied
-        to any government or central bank and are not governed by any central
-        authority. This lack of centralized control is what is meant by
-        decentralization, a key characteristic of cryptocurrencies.
+        This string is called a hash. Imagine you have a complex picture, and
+        you want to create a unique fingerprint for it.
       </p>
       <p>
-        Another critical aspect of cryptocurrencies is their supply, which
-        greatly influences their value and usefulness. The supply is dictated by
-        the software's code, allowing for the creation and destruction of units.
-        Some cryptocurrencies have a fixed supply, meaning there will only ever
-        be a certain number of units, creating scarcity. Others have an
-        unlimited supply, though they may have rules that limit how many new
-        units can be produced within a certain period.
+        No matter how big or detailed the picture is, the fingerprint is always
+        the same size. That’s what hashing does to data.
+      </p>
+      <img src="/images/HashingAlgorithm.png" alt="hashing-algorithm" />
+      <p>
+        When you input something into a hash function, it processes the input
+        and generates a hash that looks like a random series of numbers and
+        letters.
+      </p>
+      <p>
+        For example, if you input the word "hello" into a hash function, you
+        might get something like "5d41402abc4b2a76b9719d9110".
+      </p>
+      <p>
+        If you change the input even slightly, like "Hello" (with a capital H),
+        the hash will be completely different, like "8b1a9953c4611296a827abf8c".
+      </p>
+      <p>
+        This is a crucial property called the avalanche effect, which ensures
+        that even the smallest change in the input results in a drastically
+        different hash.
+      </p>
+      <p>
+        A common hash function used in many applications, including Bitcoin, is
+        SHA-256. SHA stands for Secure Hash Algorithm, and the "256" refers to
+        the 256-bit length of the hash it produces. This means no matter what
+        you input, the hash will always be a 64-character hexadecimal number.
+      </p>
+      <p>
+        One important thing about hashing is that it’s a one-way process. Once
+        you hash something, you can’t easily turn the hash back into the
+        original data.
+      </p>
+      <p>
+        This is why hashing is often used for things like storing passwords.
+        When you create a password, it gets hashed and stored. Later, when you
+        log in, the system hashes the password you enter and checks if it
+        matches the stored hash.
       </p>
 
-      <p class="summary-tag font-bold underline">Summary</p>
-      <p class="summary-head font-semibold">What Are CryptoCurrencies?</p>
       <p>
-        In summary, cryptocurrency is a revolutionary technology that has the
-        potential to transform the financial industry. However, it's important
-        to understand its complexities and risks before getting involved.
-      </p>
-      <p class="summary-head font-semibold">
-        Why Are CryptoCurrencies Special?
+        Hashes are also used to ensure data integrity. Imagine you're
+        downloading a file, and you want to make sure it hasn’t been tampered
+        with.
       </p>
       <p>
-        In summary, the popularity of cryptocurrencies is driven by a mix of
-        technological innovation, financial opportunity, philosophical appeal,
-        and practical utility. While they come with risks, the potential
-        benefits and transformative power of cryptocurrencies continue to
-        attract a growing number of users and investors.
+        The file's creator can provide a hash of the original file. After
+        downloading, you hash your copy and compare it to the original hash. If
+        they match, you know the file is unchanged.
       </p>
     </section>
     <a href="/crypto/lessons/an-asset-called-crypto.html"
@@ -182,7 +173,7 @@
         id="next-lesson"
         class="p-4 bg-secondary mb-6 w-fit font-bold text-white md:p-8"
       >
-        <p class="flex items-center">
+        <p class="flex items-center" id="asset">
           An Asset Called Crypto - - - - - - -
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -198,6 +189,6 @@
           </svg>
         </p></div
     ></a>
+    <script src="/index.js"></script>
   </body>
-  <script src="/index.js"></script>
 </html>
