@@ -1,0 +1,182 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-3262040812884675" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    />
+  </head>
+  <body class="font-quicksand" id="body">
+    <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
+      <img
+        src="/images/light-mood.png"
+        class="hidden bg-transparent w-12"
+        alt="lightmode"
+        id="lightmode"
+      />
+      <img
+        src="/images/dark-mood.png"
+        class="bg-transparent w-12"
+        alt="darkmode"
+        id="darkmode"
+      />
+    </div>
+    <header
+      id="header"
+      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8"
+    >
+      <div class="flex justify-between md:bg-none">
+        <a href="/" class="font-bold text-4xl text-primary">
+          Bit<span class="text-secondary">Pip</span>
+        </a>
+        <img
+          src="/images/menu.png"
+          alt="menu"
+          id="opennav"
+          class="menu w-8 md:hidden"
+        />
+        <img src="/images/close.png" class="hidden w-8" id="closenav" alt="" />
+      </div>
+      <nav
+        class="hidden bg-white text-left md:shadow-none md:flex space-y-4 md:w-[60%]"
+        id="navbar"
+      >
+        <ul
+          class="navlist p-4 font-bold text-center gap-6 flex flex-wrap md:justify-between mx-auto"
+        >
+          <li class="md:hover:text-button">
+            <a href="forex.html">Analysis</a>
+          </li>
+          <li class="md:hover:text-button"><a href="forex.html">News</a></li>
+          <li class="md:hover:text-button md:hover:">
+            <a href="/forex/forex.html">Learn Forex</a>
+          </li>
+          <li class="md:hover:text-button">
+            <a href="/crypto/courses.html">Learn Crypto</a>
+          </li>
+          <li class="community md:hover:text-button items-center">
+            <a href="forex.html">Community</a>
+            <ul
+              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out"
+            >
+              <li>
+                <a href="https://facebook.com/bitpips">Facebook</a>
+              </li>
+              <li>
+                <a href="https://x.com/bitpips">Twitter</a>
+              </li>
+              <li>
+                <a href="t.me/bitpips">Telegram</a>
+              </li>
+              <li>
+                <a href="reddit/bitpips">Reddit</a>
+              </li>
+              <li>
+                <a href="wa.me/bitpips">WhatsApp</a>
+              </li>
+            </ul>
+          </li>
+          <div class="mobcta flex gap-4 md:hidden">
+            <a href="/signup.html"
+              ><button class="text-secondary hover:bg-primary">
+                Sign Up
+              </button></a
+            >
+            <a href="signin.html">
+              <button class="text-secondary hover:bg-primary">Sign In</button>
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <div class="md:flex gap-4 items-center hidden">
+        <a href="/signup.html"
+          ><button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign Up
+          </button></a
+        >
+        <a href="signin.html">
+          <button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign In
+          </button></a
+        >
+      </div>
+    </header>
+    <section class="pt-20 md:pt-36 px-6">
+      <div class="title flex-col space-y-4 pb-4 items-center border-b-2">
+        <p class="text-base font-bold text-secondary">Bitology Education</p>
+        <a href="/crypto/hashing.html" class="font-bold text-secondary"
+          >Hashing</a
+        >
+        <p class="font-bold text-2xl md:text-3xl">A Good Hash Function</p>
+      </div>
+    </section>
+    <section
+      class="note flex-col space-y-4 text-xl md:text-2xl p-4 md:px-8 md:w-[90%]"
+    >
+      <p>
+        In cryptocurrencies like Bitcoin, hash functions play a crucial role in
+        ensuring security and integrity.
+      </p>
+      <p>
+        For example, the SHA-256 hash function is used in Bitcoin's
+        proof-of-work algorithm to secure transactions and control the creation
+        of new coins.
+      </p>
+      <p>
+        <span class="font-semibold">Here's a simple analogy:</span> Think of a
+        hash function like a blender. You put ingredients (your input data) into
+        the blender, and it mixes everything up to produce a smoothie (the hash
+        value).
+      </p>
+      <img src="/images/blender-preview.png" class="blender filter invert-0 brightness-0" alt="">
+      <p>
+        No matter how similar two sets of ingredients are, they produce distinct
+        smoothies, and it's nearly impossible to separate the blended smoothie
+        back into the original ingredients.
+      </p>
+      <p class="font-semibold">Here are the key features of a hash function:</p>
+      <p><span class="font-semibold">Deterministic:</span>  The same input will always produce the same output.</p>
+      <p><span class="font-semibold">Fixed Size Output:</span>  No matter the size of the input, the output (hash) will always be the same length.</p>
+      <p><span class="font-semibold">Fast Computation:</span>  It is quick to compute the hash value for any given input.</p>
+      <p><span class="font-semibold">Pre-Image Resistance:</span> Given a hash value, it should be computationally infeasible to reverse-engineer the original input.</p>
+      <p><span class="font-semibold">Small Changes in Input Change Output Significantly:</span> A slight change in the input should produce a vastly different output, often referred to as the "avalanche effect."</p>
+      <p><span class="font-semibold">Collision Resistant:</span> It should be very hard to find two different inputs that produce the same hash output.</p>
+      <p><span class="font-semibold">Uniformity:</span> A good hash function should distribute hash values evenly across its output space. This ensures that hash values are spread out and not clustered, making it harder for attackers to predict or guess hashes.</p>
+    </section>
+    <a href="/crypto/lessons/hashing-in-bitcoin.html"
+    ><div
+      id="next-lesson"
+      class="p-4 bg-secondary mb-6 w-fit font-bold text-white md:p-8"
+    >
+      <p class="flex items-center" id="asset">
+        Hashing In Bitcoin - - - - - - -
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="20"
+          width="20"
+          viewBox="0 0 320 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="#fff"
+            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+          />
+        </svg>
+      </p></div
+  ></a>
+  </body>
+  <script src="/index.js"></script>
+</html>

@@ -1,0 +1,232 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-3262040812884675" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    />
+  </head>
+  <body class="font-quicksand" id="body">
+    <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
+      <img
+        src="/images/light-mood.png"
+        class="hidden bg-transparent w-12"
+        alt="lightmode"
+        id="lightmode"
+      />
+      <img
+        src="/images/dark-mood.png"
+        class="bg-transparent w-12"
+        alt="darkmode"
+        id="darkmode"
+      />
+    </div>
+    <header
+      id="header"
+      class="justify-between items-center p-4 bg-white md:flex md:border-b-2 md:border-gray-200 fixed w-full md:p-8"
+    >
+      <div class="flex justify-between md:bg-none">
+        <a href="/" class="font-bold text-4xl text-primary">
+          Bit<span class="text-secondary">Pip</span>
+        </a>
+        <img
+          src="/images/menu.png"
+          alt="menu"
+          id="opennav"
+          class="menu w-8 md:hidden"
+        />
+        <img src="/images/close.png" class="hidden w-8" id="closenav" alt="" />
+      </div>
+      <nav
+        class="hidden bg-white text-left md:shadow-none md:flex space-y-4 md:w-[60%]"
+        id="navbar"
+      >
+        <ul
+          class="navlist p-4 font-bold text-center gap-6 flex flex-wrap md:justify-between mx-auto"
+        >
+          <li class="md:hover:text-button">
+            <a href="forex.html">Analysis</a>
+          </li>
+          <li class="md:hover:text-button"><a href="forex.html">News</a></li>
+          <li class="md:hover:text-button md:hover:">
+            <a href="/forex/forex.html">Learn Forex</a>
+          </li>
+          <li class="md:hover:text-button">
+            <a href="/crypto/courses.html">Learn Crypto</a>
+          </li>
+          <li class="community md:hover:text-button items-center">
+            <a href="forex.html">Community</a>
+            <ul
+              class="submenu absolute -z[999] -mt-[50px] mb-20 hidden pb-6 mx-auto w-[100%] transition-all ease-out"
+            >
+              <li>
+                <a href="https://facebook.com/bitpips">Facebook</a>
+              </li>
+              <li>
+                <a href="https://x.com/bitpips">Twitter</a>
+              </li>
+              <li>
+                <a href="t.me/bitpips">Telegram</a>
+              </li>
+              <li>
+                <a href="reddit/bitpips">Reddit</a>
+              </li>
+              <li>
+                <a href="wa.me/bitpips">WhatsApp</a>
+              </li>
+            </ul>
+          </li>
+          <div class="mobcta flex gap-4 md:hidden">
+            <a href="/signup.html"
+              ><button class="text-secondary hover:bg-primary">
+                Sign Up
+              </button></a
+            >
+            <a href="signin.html">
+              <button class="text-secondary hover:bg-primary">Sign In</button>
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <div class="md:flex gap-4 items-center hidden">
+        <a href="/signup.html"
+          ><button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign Up
+          </button></a
+        >
+        <a href="signin.html">
+          <button
+            class="bg-purple-800 text-white py-2 px-6 rounded hover:bg-primary"
+          >
+            Sign In
+          </button></a
+        >
+      </div>
+    </header>
+    <section class="pt-20 md:pt-36 px-6">
+      <div class="title flex-col space-y-4 pb-4 items-center border-b-2">
+        <p class="text-base font-bold text-secondary">Bitology Education</p>
+        <a href="/crypto/hashing.html" class="font-bold text-secondary"
+          >Hashing</a
+        >
+        <p class="font-bold text-2xl md:text-3xl">Hashing In Bitcoin</p>
+      </div>
+    </section>
+    <section
+      class="note flex-col space-y-4 text-xl md:text-2xl p-4 md:px-8 md:w-[90%]"
+    >
+      <p>
+        Hashing plays a vital role in the Bitcoin network, ensuring its
+        security, transparency, and proper functioning.
+      </p>
+      <p>
+        Hashing ensures that the Bitcoin network remains secure, decentralized,
+        and trustworthy.
+      </p>
+      <p class="font-semibold">Here's how hashing is used in Bitcoin:</p>
+      <p>
+        <span class="font-semibold">Creating Bitcoin Addresses:</span> When you
+        create a Bitcoin wallet, it involves generating a pair of cryptographic
+        keys: a public key and a private key.
+      </p>
+      <img
+        src="/images/Public-Key-vs-Private-Keys.png"
+        alt="public key and private key"
+      />
+      <p>
+        The public key is like your bank account number, which you can share
+        with others to receive Bitcoin.
+      </p>
+      <p>The private key is like your password, which you must keep secret.</p>
+      <p>
+        To create a Bitcoin address, the public key is hashed using SHA-256 and
+        then hashed again using another function called RIPEMD-160.
+      </p>
+      <p>
+        This double hashing provides an extra layer of security, making it
+        nearly impossible to reverse-engineer the address to get the public key.
+      </p>
+      <p>
+        <span class="font-semibold">Securing Transactions:</span> Every Bitcoin
+        transaction is hashed to ensure its validity and integrity.
+      </p>
+      <p>
+        When you send Bitcoin, the transaction details (like the sender's
+        address, receiver's address, and the amount) are hashed.
+      </p>
+      <p>
+        This hash is included in the transaction data and helps verify that the
+        transaction hasn’t been altered.
+      </p>
+      <p>
+        <span class="font-semibold">Mining New Blocks:</span> Miners are like
+        the accountants of the Bitcoin network.
+      </p>
+      <p>
+        They group transactions into a block and then compete to solve a complex
+        mathematical problem.
+      </p>
+      <p>
+        This problem involves finding a hash that meets certain criteria, known
+        as the target. Miners do this by adding a random number called a nonce
+        to the block data and hashing it. If the resulting hash is below the
+        target, the block is considered valid and added to the blockchain.
+      </p>
+
+      <p>
+        This process, called proof-of-work, is crucial for securing the network
+        and preventing fraud. The first miner to solve the problem gets rewarded
+        with new Bitcoin.
+      </p>
+      <p>
+        <span class="font-semibold">Merkle Trees:</span> A Merkle tree is a
+        structure used in Bitcoin to efficiently verify the integrity of
+        transactions within a block.
+      </p>
+      <img src="/images/Merkle-Tree.png" alt="">
+
+      <summary>
+        <p class="font-bold underline">Summary</p>
+        <p>
+          Hashing ensures that the Bitcoin network remains secure,
+          decentralized, and trustworthy. It allows miners to validate
+          transactions and create new blocks, users to verify the integrity of
+          transactions, and everyone to trust the overall system.
+        </p>
+      </summary>
+    </section>
+    <a href="/crypto/lessons/hashing-in-bitcoin.html"
+      ><div
+        id="next-lesson"
+        class="p-4 bg-secondary mb-6 w-fit font-bold text-white md:p-8"
+      >
+        <p class="flex items-center" id="asset">
+          Hashing In Bitcoin - - - - - - -
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="20"
+            viewBox="0 0 320 512"
+          >
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              fill="#fff"
+              d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+            />
+          </svg>
+        </p></div
+    ></a>
+    <script src="/index.js"></script>
+  </body>
+</html>
