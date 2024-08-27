@@ -36,7 +36,7 @@ formDoc.addEventListener("submit", (e) => {
     valid = false;
   }
 //   if (formData.password.length > 20) {
-//     passwordMessage.innerText = "Password Cannot Be More Than 20";
+//     passwordMessage.innerText = "Password Cannot Be More Than 20"
 //     passwordMessage.style.color = "red";
 //     valid = false;
 //   }
