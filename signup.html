@@ -1,46 +1,109 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp For BitPip Account</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
     />
-    <meta name="google-adsense-account" content="ca-pub-3262040812884675">
-</head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
+    <meta name="google-adsense-account" content="ca-pub-3262040812884675" />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
     }
     .bgimg {
-        opacity: 0.03;
-        height: 100vh;
-        width: 100vw;
-        z-index: -10;
-        position: fixed;
+      opacity: 0.03;
+      height: 100vh;
+      width: 100vw;
+      z-index: -10;
+      position: fixed;
     }
-</style>
-<body>
+  </style>
+  <body class="flex items-center">
     <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
-        <img src="/images/light-mood.png" class="hidden bg-transparent  w-12 " alt="lightmode" id="lightmode">
-        <img src="/images/dark-mood.png" class="bg-transparent w-12" alt="darkmode" id="darkmode">
-      </div>
-    <img src="images/vectorbg.jpg" class="bgimg">
-    <div class="flex h-screen items-center w-full">
-        <div class="error"></div>
-        <form id="form" class="flex-col space-y-4 mx-auto w-[80%] md:w-[400px]">
-            <p class="font-comforta text-3xl font-bold ">SignUp</p>
-            <p>Track progress with an account</p>
-            <input type="text" name="name" id="name" placeholder="FullName" title="Please enter your fullname" spellcheck="true" class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="email" name="email" id="email" placeholder="Email" title="Please enter your email" class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="password" name="password" id="password" placeholder="Password" title="Please enter a strong password" maxlength="12" class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="tel" name="mobile" id="mobile" placeholder="Mobile" title="Please enter your phone number" class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"><br>
-            <button type="submit" class="bg-button w-full py-4 rounded text-white font-bold text-xl">Create Account</button>
-            <p class="font-comforta text-center">Already have an? <a href="signin.html" class="text-button font-semibold">Login Here</a></p>
-        </form>
+      <img
+        src="/images/light-mood.png"
+        class="hidden bg-transparent w-12"
+        alt="lightmode"
+        id="lightmode"
+      />
+      <img
+        src="/images/dark-mood.png"
+        class="bg-transparent w-12"
+        alt="darkmode"
+        id="darkmode"
+      />
     </div>
-</body>
+    <img src="images/vectorbg.jpg" class="bgimg" />
+    <!-- <div class="flex flex-col justify-center h-screen items-center w-full bg-red-500"> -->
+    <div class="error"></div>
+    <form
+      id="form"
+      class="flex flex-col bg-white space-y-4 mx-auto w-[80%] md:w-[400px]"
+    >
+      <p class="font-comforta text-3xl font-bold">SignUp</p>
+      <p>Track progress with an account</p>
+      <div class="name">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="FullName"
+          title="Please enter your fullname"
+          spellcheck="true"
+          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+        />
+        <div class="name-error"></div>
+      </div>
+      <div class="mail">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          title="Please enter your email"
+          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+        />
+        <div class="mail-error"></div>
+      </div>
+      <div class="pass">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          title="Please enter a strong password"
+          maxlength="12"
+          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+        />
+        <div class="pword-error"></div>
+      </div>
+      <div class="num">
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          placeholder="Mobile"
+          title="Please enter your phone number"
+          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+        />
+        <div class="num-error"></div>
+      </div>
+      <button
+        type="submit" id="submit-btn"
+        class="bg-button w-full py-4 rounded text-white font-bold text-xl"
+      >
+        Create Account
+      </button>
+      <p class="font-comforta text-center">
+        Already have an?
+        <a href="signin.html" class="text-button font-semibold">Login Here</a>
+      </p>
+    </form>
+    <script src="form.js"></script>
+  </body>
 </html>

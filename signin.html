@@ -1,43 +1,74 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp For BitPip Account</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
     />
-    <meta name="google-adsense-account" content="ca-pub-3262040812884675">
-</head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
+    <meta name="google-adsense-account" content="ca-pub-3262040812884675" />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
     }
     .bgimg {
-        opacity: 0.03;
-        height: 100vh;
-        width: 100vw;
-        z-index: -10;
-        position: fixed;
+      opacity: 0.03;
+      height: 100vh;
+      width: 100vw;
+      z-index: -10;
+      position: fixed;
     }
-</style>
-<body>
+  </style>
+  <body class="flex items-center">
     <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
-        <img src="/images/light-mood.png" class="hidden bg-transparent  w-12 " alt="lightmode" id="lightmode">
-        <img src="/images/dark-mood.png" class="bg-transparent w-12" alt="darkmode" id="darkmode">
-      </div>
-    <img src="images/vectorbg.jpg" class="bgimg">
-    <div class="flex h-screen items-center w-full">
-        <form action="post" class="flex-col space-y-4 mx-auto w-[80%] md:w-[400px]">
-            <p class="font-comforta text-3xl font-bold ">SignIn</p>
-            <p>Welcome Back</p>
-            <input type="email" name="mail" id="email" placeholder="Email" title="Input your login email" required class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
-            <input type="password" name="password" id="pass" placeholder="Password" title="Enter password" maxlength="12" required class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"><br>
-            <button type="submit" class="bg-button w-full py-4 rounded text-white font-bold text-xl">Create Account</button>
-            <p class="font-comforta text-center">No account yet? <a href="signup.html" class="text-button font-semibold">Create One</a></p>
-        </form>
+      <img
+        src="/images/light-mood.png"
+        class="hidden bg-transparent w-12"
+        alt="lightmode"
+        id="lightmode"
+      />
+      <img
+        src="/images/dark-mood.png"
+        class="bg-transparent w-12"
+        alt="darkmode"
+        id="darkmode"
+      />
     </div>
-</body>
+    <img src="images/vectorbg.jpg" class="bgimg" />
+    <form action="post" class="flex-col space-y-4 mx-auto w-[80%] md:w-[400px]" id="form">
+      <p class="font-comforta text-3xl font-bold">SignIn</p>
+      <p>Welcome Back</p>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        title="Input your login email"
+        class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"
+      /><div class="mail-error"></div>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        title="Enter password"
+        class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"
+      /><div class="pword-error"></div>
+      <button
+        type="submit"
+        class="bg-button w-full py-4 rounded text-white font-bold text-xl"
+      >
+        Create Account
+      </button>
+      <p class="font-comforta text-center">
+        No account yet?
+        <a href="signup.html" class="text-button font-semibold">Create One</a>
+      </p>
+    </form>
+    <script src="login.js"></script>
+  </body>
 </html>
