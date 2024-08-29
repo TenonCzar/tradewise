@@ -59,7 +59,6 @@ formDoc.addEventListener("submit", (e) => {
 
   // If form Is not valid
   if (!valid) {
-    getElementById("submit-btn").innerText = "Create Account";
     return;
   }
 });
