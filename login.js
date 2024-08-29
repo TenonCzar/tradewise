@@ -2,6 +2,8 @@
 const formDoc = document.getElementById("form");
 const emailMessage = document.querySelector(".mail-error");
 const passwordMessage = document.querySelector(".pword-error");
+const darkMood = document.getElementById("darkmode");
+const lightMood = document.getElementById("lightmode");
 const modes = document.querySelector(".modes");
 
 formDoc.addEventListener("submit", (e) => {
@@ -45,4 +47,40 @@ formDoc.addEventListener("submit", (e) => {
 //     passwordMessage.style.color = "red";
 //     valid = false;
 //   }
+
+ // If form Is not valid
+ if (!valid) {
+  return;
+}
+
+let redirect = 20000;
+  function delayInSeconds() {
+    window.location = "./crypto/courses.html";
+
+    setTimeout(() => {}, redirect);
+  }
+  delayInSeconds();
+
+  document.getElementById('submit-btn').innerText = 'Loading...'
 });
+
+
+// DARK MODE
+
+darkMood.addEventListener("click", function () {
+  darkMood.classList.add("hidden");
+  lightMood.classList.remove("hidden");
+  document.body.style.backgroundColor = "#161058";
+  document.body.style.color = "white";
+  formDoc.style.backgroundColor = "transparent";
+});
+
+lightMood.addEventListener("click", function () {
+  lightMood.classList.add("hidden");
+  darkMood.classList.remove("hidden");
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "#161058";
+});
+
+modes.style.backgroundColor = 'transparent'
+modes.style.width = "60px"

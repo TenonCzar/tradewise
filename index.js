@@ -26,25 +26,25 @@ toggleClose.addEventListener("click", function () {
 });
 
 //  STYLING DARK MODE
-// darkMood.addEventListener("click", function () {
-//   darkMood.classList.add("hidden");
-//   lightMood.classList.remove("hidden");
-//   document.body.style.backgroundColor = "#161058";
-//   document.body.style.color = "white";
-//   featured.style.color = "white";
-//   header.style.backgroundColor = "#161058";
-//   navBar.style.backgroundColor = "transparent";
-// });
+darkMood.addEventListener("click", function () {
+  darkMood.classList.add("hidden");
+  lightMood.classList.remove("hidden");
+  document.body.style.backgroundColor = "#161058";
+  document.body.style.color = "white";
+  featured.style.color = "white";
+  header.style.backgroundColor = "#161058";
+  navBar.style.backgroundColor = "transparent";
+});
 
-// lightMood.addEventListener("click", function () {
-//   lightMood.classList.add("hidden");
-//   darkMood.classList.remove("hidden");
-//   document.body.style.backgroundColor = "white";
-//   document.body.style.color = "#161058";
-//   featured.style.color = "";
-//   header.style.backgroundColor = "";
-// });
+lightMood.addEventListener("click", function () {
+  lightMood.classList.add("hidden");
+  darkMood.classList.remove("hidden");
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "#161058";
+  featured.style.color = "";
+  header.style.backgroundColor = "";
+});
 
-// modes.style.backgroundColor = 'red'
-// modes.style.width = "60px"
-modes.style.display = 'none'
+modes.style.backgroundColor = 'transparent'
+modes.style.width = "60px"
+// modes.style.display = 'none'
