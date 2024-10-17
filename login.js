@@ -4,7 +4,7 @@ const emailMessage = document.querySelector(".mail-error");
 const passwordMessage = document.querySelector(".pword-error");
 const darkMood = document.getElementById("darkmode");
 const lightMood = document.getElementById("lightmode");
-const modes = document.querySelector(".modes");
+document.body.style.background = "#161058";
 
 formDoc.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -66,13 +66,14 @@ let redirect = 20000;
 
 
 // DARK MODE
-
 darkMood.addEventListener("click", function () {
-  darkMood.classList.add("hidden");
-  lightMood.classList.remove("hidden");
-  document.body.style.backgroundColor = "#161058";
-  document.body.style.color = "white";
-  formDoc.style.backgroundColor = "transparent";
+  darkMood.classList.toggle("hidden");
+  lightMood.classList.toggle("hidden");
+  document.body.style.backgroundColor = "";
+  document.body.style.color = "";
+  featured.style.color = "";
+  header.style.backgroundColor = "";
+  navBar.style.backgroundColor = "";
 });
 
 lightMood.addEventListener("click", function () {
@@ -80,7 +81,6 @@ lightMood.addEventListener("click", function () {
   darkMood.classList.remove("hidden");
   document.body.style.backgroundColor = "white";
   document.body.style.color = "#161058";
+  featured.style.color = "#161058";
+  header.style.backgroundColor = "";
 });
-
-// modes.style.backgroundColor = 'transparent'
-// modes.style.width = "60px"

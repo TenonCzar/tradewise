@@ -23,17 +23,18 @@
       position: fixed;
     }
   </style>
-  <body class="flex items-center">
-    <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
+  <body class="flex items-center bg-[#161058] text-white">
+    <!-- Modes -->
+    <div class="modes flex items-center justify-center bg-gray-400 bg-opacity-80 rounded-full fixed top-20 w-[50px] h-[50px]">
       <img
         src="/images/light-mood.png"
-        class="hidden bg-transparent w-12"
+        class="bg-transparent w-[40px] h-[40px]"
         alt="lightmode"
         id="lightmode"
       />
       <img
         src="/images/dark-mood.png"
-        class="bg-transparent w-12"
+        class="hidden bg-transparent w-12"
         alt="darkmode"
         id="darkmode"
       />
@@ -43,7 +44,7 @@
     <div class="error"></div>
     <form
       id="form"
-      class="flex flex-col bg-white space-y-4 mx-auto w-[80%] md:w-[400px]"
+      class="flex flex-col space-y-4 mx-auto w-[80%] md:w-[400px]"
     >
       <p class="font-comforta text-3xl font-bold">SignUp</p>
       <p>Track progress with an account</p>
@@ -55,7 +56,7 @@
           placeholder="FullName"
           title="Please enter your fullname"
           spellcheck="true"
-          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+          class="w-full text-[#161058] border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
         />
         <div class="name-error"></div>
       </div>
@@ -66,7 +67,7 @@
           id="email"
           placeholder="Email"
           title="Please enter your email"
-          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+          class="w-full border-2 text-[#161058] outline-none border-secondary p-4 rounded placeholder:text-button"
         />
         <div class="mail-error"></div>
       </div>
@@ -77,7 +78,7 @@
           id="password"
           placeholder="Password"
           title="Please enter a strong password"
-          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+          class="w-full text-[#161058] border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
         />
         <div class="pword-error"></div>
       </div>
@@ -88,7 +89,7 @@
           id="mobile"
           placeholder="Mobile"
           title="Please enter your phone number"
-          class="w-full border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
+          class="w-full text-[#161058] border-2 outline-none border-secondary p-4 rounded placeholder:text-button"
         />
         <div class="num-error"></div>
       </div>
@@ -104,5 +105,6 @@
       </p>
     </form>
     <script src="form.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

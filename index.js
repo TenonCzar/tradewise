@@ -1,39 +1,54 @@
 "use strict";
 
-// const e = require("express");
+// variables;
+
+const signUpBtn = document.getElementById("signupbtn");
+const signInBtn = document.getElementById("signinbtn");
 
 const toggleOpen = document.getElementById("opennav");
 const toggleClose = document.getElementById("closenav");
-const mainNav = document.querySelector(".navlist");
+
 const featureLesson = document.querySelector(".featured");
 const navBar = document.querySelector("#navbar");
-const modes = document.querySelector(".modes");
-const blender = document.querySelector(".blender");
 const darkMood = document.getElementById("darkmode");
 const lightMood = document.getElementById("lightmode");
 const featured = document.querySelector(".featured-text");
 const header = document.getElementById("header");
+document.body.style.background = "#161058";
 
+// window.onload = function () {
+//   // Get the current URL
+//   var url = window.location.href;
+
+//   // Check if the URL ends with ".html"
+//   if (url.endsWith(".html")) {
+//     // Redirect to the same URL without ".html"
+//     var newUrl = url.replace(".html", "");
+//     window.location.href = newUrl;
+//   }
+// };
+
+// nav toggle
 toggleOpen.addEventListener("click", function () {
   navBar.classList.remove("hidden");
-  toggleClose.classList.remove("hidden");
-  toggleOpen.classList.add("hidden");
+  toggleClose.classList.toggle("hidden");
+  toggleOpen.classList.toggle("hidden");
 });
 toggleClose.addEventListener("click", function () {
-  navBar.classList.add("hidden");
-  toggleClose.classList.add("hidden");
-  toggleOpen.classList.remove("hidden");
+  navBar.classList.toggle("hidden");
+  toggleClose.classList.toggle("hidden");
+  toggleOpen.classList.toggle("hidden");
 });
 
 //  STYLING DARK MODE
 darkMood.addEventListener("click", function () {
-  darkMood.classList.add("hidden");
-  lightMood.classList.remove("hidden");
-  document.body.style.backgroundColor = "#161058";
-  document.body.style.color = "white";
-  featured.style.color = "white";
-  header.style.backgroundColor = "#161058";
-  navBar.style.backgroundColor = "transparent";
+  darkMood.classList.toggle("hidden");
+  lightMood.classList.toggle("hidden");
+  document.body.style.backgroundColor = "";
+  document.body.style.color = "";
+  featured.style.color = "";
+  header.style.backgroundColor = "";
+  navBar.style.backgroundColor = "";
 });
 
 lightMood.addEventListener("click", function () {
@@ -41,10 +56,13 @@ lightMood.addEventListener("click", function () {
   darkMood.classList.remove("hidden");
   document.body.style.backgroundColor = "white";
   document.body.style.color = "#161058";
-  featured.style.color = "";
+  featured.style.color = "#161058";
   header.style.backgroundColor = "";
 });
 
-// modes.style.backgroundColor = 'transparent'
-// modes.style.width = "60px"
-// modes.style.display = 'none'
+signInBtn.addEventListener("click", () => {
+  window.location.href = "/signin.html";
+});
+signUpBtn.addEventListener("click", () => {
+  window.location.href = "/signup.html";
+});

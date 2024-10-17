@@ -23,17 +23,18 @@
       position: fixed;
     }
   </style>
-  <body class="flex items-center">
-    <div class="modes flex fixed w-[40%] bottom-[30px] pl-4">
+  <body class="flex items-center bg-[#161058] text-white">
+    <!-- Modes -->
+    <div class="modes flex items-center justify-center bg-gray-400 bg-opacity-80 rounded-full fixed top-20 w-[50px] h-[50px]">
       <img
         src="/images/light-mood.png"
-        class="hidden bg-transparent w-12"
+        class="bg-transparent w-[40px] h-[40px]"
         alt="lightmode"
         id="lightmode"
       />
       <img
         src="/images/dark-mood.png"
-        class="bg-transparent w-12"
+        class="hidden bg-transparent w-12"
         alt="darkmode"
         id="darkmode"
       />
@@ -48,7 +49,7 @@
         id="email"
         placeholder="Email"
         title="Input your login email"
-        class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"
+        class="outline-none w-full border-2 text-[#161058] border-secondary p-4 rounded placeholder:text-button"
       /><div class="mail-error"></div>
       <input
         type="password"
@@ -56,7 +57,7 @@
         id="password"
         placeholder="Password"
         title="Enter password"
-        class="outline-none w-full border-2 border-secondary p-4 rounded placeholder:text-button"
+        class="outline-none w-full border-2 text-[#161058] border-secondary p-4 rounded placeholder:text-button"
       /><div class="pword-error"></div>
       <button
         type="submit"
@@ -69,6 +70,7 @@
         <a href="signup.html" class="text-button font-semibold">Create One</a>
       </p>
     </form>
+    <!-- <script src="index.js"></script> -->
     <script src="login.js"></script>
   </body>
 </html>
