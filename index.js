@@ -45,6 +45,6 @@ lightMood.addEventListener("click", function () {
   header.style.backgroundColor = "";
 });
 
-modes.style.backgroundColor = 'transparent'
-modes.style.width = "60px"
+// modes.style.backgroundColor = 'transparent'
+// modes.style.width = "60px"
 // modes.style.display = 'none'

@@ -82,5 +82,5 @@ lightMood.addEventListener("click", function () {
   document.body.style.color = "#161058";
 });
 
-modes.style.backgroundColor = 'transparent'
-modes.style.width = "60px"
+// modes.style.backgroundColor = 'transparent'
+// modes.style.width = "60px"
